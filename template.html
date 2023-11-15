@@ -1,57 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website-by-layout</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Work+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
     <!-- section*9>.container -->
     <header>
-        <div class="container"></div>
-        <a href="" class="logo"><img src="/images/01_SNOWlogo.png" alt="logo"></a>
-        <!-- nav.menu-top>ul>li*5>a[href=#]>lorem1 -->
-        <nav class="menu-top">
-         <ul>
-            <li><a href="#">Подменю_1</a></li>
-            <li><a href="#">Подменю_2</a></li>
-            <li><a href="#">Подменю_3</a></li>
-            <li><a href="#">Подменю_4</a></li>
-            <li><a href="#">Подменю_5</a></li>
-         </ul>
-        </nav>
+      <div class="container">
+        <a href="" class="logo"
+          ><img src="/images/01_SNOWlogo.png" alt="logo"
+        /></a>
 
-        <!-- (p.center>lorem3)+(h1>lorem5)+(p.center>lorem4) -->
-        <p class="center">new branding agency</p>
-        <h1>We are about to change the way</h1>
-        <p class="center">you publish on web</p>
-
+        <div class="burger-menu">
+          <a href="" class="burger-menu_button">
+            <spun class="burger-menu_lines"></spun>
+          </a>
+          <nav class="burger-menu_nav">
+            <a href="#about" class="burger-menu_link">О нас</a>
+            <a href="#projects" class="burger-menu_link">Проекты</a>
+            <a href="#reviews" class="burger-menu_link">Отзывы</a>
+            <a href="#blog" class="burger-menu_link">Новости</a>
+            <a href="#form" class="burger-menu_link">Связаться с нами</a>
+          </nav>
+          <div class="burger-menu_overlay"></div>
+        </div>
+          
+        <div class="brand">
+          <!-- (p.center>lorem3)+(h1>lorem5)+(p.center>lorem4) -->
+          <p class="center">new branding agency</p>
+          <h1>We are about to change the way</h1>
+          <p class="center">you publish on web</p>
+        </div>
         <a href="#" class="down"></a>
+      </div>
     </header>
-    <section class="about">
-        <div class="container"></div>
+    <section class="about" id="about">
+      <div class="container">О нас</div>
     </section>
+    <br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br>  <br><br><br><br><br>
     <section class="stats">
-        <div class="container"></div>
+      <div class="container"></div>
     </section>
-    <section class="projects">
-        <div class="container"></div>
+    <section class="projects" id="projects">
+      <div class="container">Проекты</div>
     </section>
-    <section class="reviews">
-        <div class="container"></div>
+    <br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br>  <br><br><br><br><br>
+    <section class="reviews" id="reviews">
+      <div class="container">Отзывы</div>
     </section>
+    <br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br>  <br><br><br><br><br>
     <section class="partners">
-        <div class="container"></div>
+      <div class="container"></div>
     </section>
-    <section class="blog">
-        <div class="container"></div>
+    <section class="blog" id="blog">
+      <div class="container">Новости</div>
     </section>
-    <section class="form">
-        <div class="container"></div>
+    <br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br>  <br><br><br><br><br>
+    <section class="form" id="form">
+      <div class="container">Обратная связь (форма)</div>
     </section>
+    <br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br>  <br><br><br><br><br>
     <footer>
-        <div class="container"></div>
+      <div class="container"></div>
     </footer>
-</body>
+
+<!-- Джава скрипт подключаем в конце (снизу) - после того как отрисовано DOM дерево -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/Скрипты.js"></script>
+    
+  </body>
 </html>
